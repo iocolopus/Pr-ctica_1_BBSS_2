@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Cartas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1c1c21; 
+            font-family: 'Segoe UI';
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex_container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .results {
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-decoration: underline;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .results .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 240px !important; 
+            align-self: flex-end;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+        }
+
+        .extraInfo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 40%, rgba(0,0,0,0) 100%);
+            padding: 40px 15px 15px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover .extraInfo {
+            transform: translateY(0);
+        }
+
+        .extraInfo h1 {
+            color: #d4af37; 
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .faction {
+            color: #ff6b6b; 
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .traits {
+            color: #a29bfe;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        hr {
+            color: #d4af37;
+            border-width: 2px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex_container">
+
+        
+        
+        <div class="card">
+            <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+            <div class="extraInfo">
+                <h1>Machete</h1>
+                <p class="faction">Guardián</p>
+                <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="results">
+
+        <h1>Resultados</h1>
+            <div class="cards">
+
+            <div class="card">
+                <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+                <div class="extraInfo">
+                    <h1>Machete</h1>
+                    <p class="faction">Guardián</p>
+                    <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+                <div class="extraInfo">
+                    <h1>Machete</h1>
+                    <p class="faction">Guardián</p>
+                    <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+                <div class="extraInfo">
+                    <h1>Machete</h1>
+                    <p class="faction">Guardián</p>
+                    <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+                <div class="extraInfo">
+                    <h1>Machete</h1>
+                    <p class="faction">Guardián</p>
+                    <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://arkhamdb.com/bundles/cards/01115.jpg" alt="Machete">
+                <div class="extraInfo">
+                    <h1>Machete</h1>
+                    <p class="faction">Guardián</p>
+                    <p class="traits">Objeto, Arma, Cuerpo a cuerpo</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

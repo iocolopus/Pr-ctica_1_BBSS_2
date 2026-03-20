@@ -1,0 +1,8 @@
+pandas
+redis
+tqdm
+rich
+pathlib
+numpy
+sentence-transformers
+nltk
